@@ -35,13 +35,41 @@ namespace ConsoleLoops
                     switch (opcao)
                     {
                         case 1:
-                           
+                            Console.WriteLine("Iniciando While, Digite o texto a ser imprimido");
+                            string imprimirWhile = Console.ReadLine().ToUpper();
+                           int contadorWhile = 1;
+                            while (true)
+                            {
+                                Console.WriteLine($"imprimindo {contadorWhile}: {imprimirWhile}");    
+                                
+
+                                contadorWhile++;
+                                if (contadorWhile >= 10) 
+                                {
+                                    Console.WriteLine("Deseja sair digite 1, Deseja continuar Digite 0");
+                                    int sairWhile = int.Parse(Console.ReadLine());
+                                    if (sairWhile == 1)
+                                    {
+                                        break;
+                                    }
+                                    else 
+                                    {
+                                        contadorWhile = 1;
+                                    }
+                                }
+                                
+                            }
+
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("\nSaindo do While\n");
+                            Console.ResetColor();   
+
                             break;
                         case 2:
-                            
+
                             break;
                         case 3:
-                            
+
                             break;
                         case 4:
                             Console.Clear();
