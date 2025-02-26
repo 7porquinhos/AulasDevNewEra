@@ -38,7 +38,17 @@ namespace ConsoleLoops
                            
                             break;
                         case 2:
-                            
+                            Console.WriteLine("\nIniciando FOR,Digite o texto a ser imprimido:");
+                            string imprimir = Console.ReadLine().ToUpper();
+                            Console.WriteLine("\nDigite a quantidade de vezes que deve executar:");
+                            int contador = Convert.ToInt32(Console.ReadLine());
+                            for (int i = 1; i <= contador; i++)
+                            {
+                                Console.WriteLine($"Imprimindo {i}: {imprimir}");
+                            }
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("\nSaindo do FOR\n");
+                            Console.ResetColor();
                             break;
                         case 3:
                             
