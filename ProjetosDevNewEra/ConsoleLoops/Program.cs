@@ -66,7 +66,7 @@ namespace ConsoleLoops
 
                             break;
                         case 2:
-<<<<<<< HEAD
+
                             Console.WriteLine("\nIniciando FOR,Digite o texto a ser imprimido:");
                             string imprimir = Console.ReadLine().ToUpper();
                             Console.WriteLine("\nDigite a quantidade de vezes que deve executar:");
@@ -78,9 +78,7 @@ namespace ConsoleLoops
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("\nSaindo do FOR\n");
                             Console.ResetColor();
-=======
 
->>>>>>> a8f14601f87513c305cb6ced4a774397ef83456d
                             break;
                         case 3:
 
