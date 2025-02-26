@@ -44,7 +44,7 @@ namespace ConsoleLoops
                                 
 
                                 contadorWhile++;
-                                if (contadorWhile >= 10) 
+                                if (contadorWhile > 10) 
                                 {
                                     Console.WriteLine("Deseja sair digite 1, Deseja continuar Digite 0");
                                     int sairWhile = int.Parse(Console.ReadLine());
