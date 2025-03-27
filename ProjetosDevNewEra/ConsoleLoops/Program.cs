@@ -81,7 +81,23 @@ namespace ConsoleLoops
 
                             break;
                         case 3:
+                            List<string> listaDeNomes = new List<string>();
 
+                            Console.WriteLine("\nIniciando FOREACH, Digite os nomes a ser imprimidos separados por , \nEX: ELIEL,HUGO,RIANDERSON:");
+                            string inputForeach = Console.ReadLine().ToUpper();
+                            listaDeNomes.AddRange(inputForeach.Split(','));
+
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("\nNomes encontrados na Lista:");
+                            Console.ResetColor();
+                            foreach (var nome in listaDeNomes)
+                            {
+                                Console.WriteLine($"Nome: {nome.Trim()}");
+                            }
+
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("\nSaindo do FOREACH...\n");
+                            Console.ResetColor();
                             break;
                         case 4:
                             Console.Clear();
