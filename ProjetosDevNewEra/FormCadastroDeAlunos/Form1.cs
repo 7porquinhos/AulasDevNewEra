@@ -40,12 +40,22 @@ namespace FormCadastroDeAlunos
 
             foreach (var item in listaDeAlunos)
             {
-                dgvAlunos.Rows.Add(item.Nome, item.Idade);
+                dgvAlunos.Rows.Add(item.Nome.ToUpper(), item.Idade);
 
             }
             txtNome.Text = "";
             txtIdade.Text = "";
 
+
+        }
+
+        private void txtIdade_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
 
         }
     }
